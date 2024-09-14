@@ -85,7 +85,51 @@ public class main {
 <h4> Parametrised Method </h4>
 
 ```java
+package Parametrised_Method;
+
+public class Teacher {
+    String name,gender;
+    int phone;
+    void SetInfo(String n,String g,int ph ){
+        name=n;
+        gender=g;
+        phone=ph;
+
+    }
+    void Display(){
+        System.out.println("Name: "+name);
+        System.out.println("Gender: "+gender);
+        System.out.println("Phone: "+phone);
+        System.out.println();
+    }
+
+}
 
 ```
+
+````java
+package Parametrised_Method;
+
+public class Main {
+    public static void main(String[] args) {
+        Teacher ob =new Teacher();
+        ob.SetInfo("Khorsed Alam ","Male",857265);
+        ob.Display();
+
+        Teacher ob1 =new Teacher();
+        ob1.SetInfo("Khorsed   ","Male",8255674);
+        ob1.Display();
+    }
+}
+
+````
+<h3>Constructor</h3>
+<p>Constructor is Special type of method which has no return type.<br/>
+Class name and Constructor Name Same.
+</p>
+
+````java
+
+````
 
 

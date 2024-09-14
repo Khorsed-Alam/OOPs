@@ -85,6 +85,86 @@ public class main {
 <h4> Parametrised Method </h4>
 
 ```java
+package Parametrised_Method;
+
+public class Teacher {
+    String name,gender;
+    int phone;
+    void SetInfo(String n,String g,int ph ){
+        name=n;
+        gender=g;
+        phone=ph;
+
+    }
+    void Display(){
+        System.out.println("Name: "+name);
+        System.out.println("Gender: "+gender);
+        System.out.println("Phone: "+phone);
+        System.out.println();
+    }
+
+}
+
+```
+
+````java
+package Parametrised_Method;
+
+public class Main {
+    public static void main(String[] args) {
+        Teacher ob =new Teacher();
+        ob.SetInfo("Khorsed Alam ","Male",857265);
+        ob.Display();
+
+        Teacher ob1 =new Teacher();
+        ob1.SetInfo("Khorsed   ","Male",8255674);
+        ob1.Display();
+    }
+}
+
+````
+<h3>Constructor</h3>
+<p>Constructor is a special type of method that is use to initialize the object</p>
+<p>Constructor name and class name are same</p>
+<p>Constructor has no return type not even Void</p>
+<p>it called Automatically</p>
+<p>Default Constructor(Non Parameter) , Parameterized </p>
+
+````java
+package Constructor;
+
+public class Teacher {
+    String  name;
+    String gender;
+    int phone;
+    Teacher(String N, String g, int ph ){
+        name=N;
+        gender=g;
+        phone=ph;
+    }
+    void Display(){
+        System.out.println("Name: "+name);
+        System.out.println("Gender: "+gender);
+        System.out.println("Phone: "+phone);
+        System.out.println();
+    }
+}
+
+
+````
+
+```java
+package Constructor;
+
+public class Main {
+    public static void main(String[] args) {
+        Teacher ob= new Teacher("Khorsed","male",2442526);
+        ob.Display();
+
+        Teacher ob1= new Teacher("Khorsed Alam","Male",59276);
+        ob1.Display();
+    }
+}
 
 ```
 

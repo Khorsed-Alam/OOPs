@@ -300,3 +300,11 @@ public class Main {
 }
 
 ```
+<h3>Difference between Constructor and Method</h3>
+
+| Constructor                                     | Method                                       |
+|-------------------------------------------------|----------------------------------------------|
+| initialize the state of an object               | Expose behaviour of object                   |
+| No Return type                                  | Must have Return Type                        |
+| Invoked implicitly (to call)                    | Invoke explicitly(to call)                   |
+| Constructor name must be same as the class name | method Name should not be same as class name |

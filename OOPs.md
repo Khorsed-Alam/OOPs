@@ -360,3 +360,30 @@ public class Main {
 }
 
 ````
+
+<h3>Static Variable Access </h3>
+<p> To access any type of Static (variable ,method or block) don`t need any object Beacause Static keyword is related with class </p>
+
+<p>To Access Static function {Class.(static variable, method,block)}</p>
+
+```java
+package Static_Variable;
+
+public class Static_Variable {
+    static  String name="khorsed alam";
+
+}
+
+```
+
+````java
+package Static_Variable;
+
+public class main {
+    public static void main(String[] args) {
+        System.out.println(Static_Variable.name);
+        
+    }
+}
+
+````

@@ -322,3 +322,50 @@ public class Main {
 <li>Static Method</li>
 <li>Static Block</li>
 </ol>
+
+````java
+package Static_Keyword;
+
+public class Student {
+    String  name;
+    String id;
+    static  String university_name;
+    Student(String n,String I){
+        name=n;
+        id=I;
+    }
+    void Display(){
+        System.out.println("Name: "+name);
+        System.out.println("ID: "+id);
+        System.out.println("University_Name: "+university_name);
+        System.out.println();
+    }
+}
+
+````
+
+````java
+package Static_Keyword;
+
+public class Main {
+    public static void main(String[] args) {
+        Student ob= new Student("Khorsed","0112330472");
+        ob.Display();
+        Student ob2= new Student("Khorsed Alam","011452330472");
+        ob2.Display();
+
+
+    }
+
+}
+
+````
+
+<h3>Static Variable Access </h3>
+<p> To access any type of Static (variable ,method or block) don`t need any object Beacause Static keyword is related with class </p>
+
+<p>To Access Static function {Class.(static variable, method,block)}</p>
+
+```java
+
+```

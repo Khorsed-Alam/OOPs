@@ -14,8 +14,9 @@
 <h3>Class:</h3>
 <p>class is a template definition of the methods and variables in a particular kind of object</p>
 <p>A Class is a blue print or template from which individual object are created.</p>
-<h4>Class Declaration  </h4>
  
+ <h4>Class Syntax</h4>
+
 ````java
 public class Test {
     // variabel
@@ -26,3 +27,65 @@ public class Test {
 
 <h3>Object:</h3>
 <p>a data field that has unique attributes and behavior</p>
+
+<h4> Object Syntax: </h4>
+
+```java
+        Teacher ob ;// object declare
+        ob =new Teacher();// object create
+        ob.name = "khorsed";// value assign
+
+```
+<h4> Method_Inside_Class </h4>
+
+````java
+       package Method_Inside_Class;
+
+public class Car {
+    String  name;
+    String Model;
+    int Price;
+
+    void Display()// Create method.
+    {
+        // Method Body
+        System.out.println("Name :"+name);
+        System.out.println("Model:"+Model);
+        System.out.println("Price :"+Price);
+
+
+    }
+}
+
+````
+````java
+package Method_Inside_Class;
+
+public class main {
+    public static void main(String[] args) {
+        Car c= new Car();
+        c.name="BMW";
+        c.Model="BMW iX M60 ";
+        c.Price=10000000;
+        c.Display();
+
+        System.out.println();
+
+        Car C1= new Car();
+        C1.name="Honda";
+        C1.Model="Civic";
+        C1.Price=2000000;
+        C1.Display();
+
+    }
+}
+
+````
+
+<h4> Parametrised Method </h4>
+
+```java
+
+```
+
+

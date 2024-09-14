@@ -216,3 +216,58 @@ public class Main {
 }
 
 ```
+
+<h3> Constructor Overloading </h3>
+<p>constructor overloading occurs when we have multiple constructors in the same class (with the same name)
+but with different numbers and types of parameters.</p>
+
+````java
+package Constructor_Overloading;
+
+import java.util.TreeMap;
+
+public class Teacher {
+    String name, gender;
+    int phone;
+    Teacher(){
+        System.out.println("No information");
+    }
+    Teacher (String nm, String gen){
+        name=nm;
+        gender=gen;
+
+    }
+    Teacher (String nm , String gen, int ph){
+        name=nm;
+        gender = gen;
+        phone= ph;
+    }
+    void Display(){
+        System.out.println("Name: "+name);
+        System.out.println("Gender: "+gender);
+        System.out.println("Phone: "+phone);
+        System.out.println();
+    }
+}
+
+````
+
+````java
+package Constructor_Overloading;
+
+public class Main {
+    public static void main(String[] args) {
+        Teacher ob= new Teacher("khorsed","male");
+        ob.Display();
+
+        Teacher ob1= new Teacher("Khorsed Alam","male",14);
+        ob1.Display();
+
+        Teacher ob2= new Teacher();
+        ob2.Display();
+    }
+}
+
+````
+
+<h3> </h3>

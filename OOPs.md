@@ -269,3 +269,34 @@ public class Main {
 }
 
 ````
+
+<h3>Return Value from Method </h3>
+<p>Use appropriate return type and return keyword</p>
+
+```java
+package Return_Value_From_Method;
+
+public class ReturningValue {
+    int Value;
+    int square(int value){
+        Value=value;
+        return  Value *Value;
+
+    }
+}
+
+```
+
+```java
+   package Return_Value_From_Method;
+
+public class Main {
+    public static void main(String[] args) {
+        ReturningValue ob=new ReturningValue();
+        int result = ob.square(5);
+        System.out.println(result);
+
+    }
+}
+
+```

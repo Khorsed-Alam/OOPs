@@ -15,10 +15,14 @@
 <p>class is a template definition of the methods and variables in a particular kind of object</p>
 <p>A Class is a blue print or template from which individual object are created.</p>
 <h4>Class Declaration  </h4>
-class className{
-// varable 
-// method
+ 
+````java
+public class Test {
+    // variabel
+    // method
 }
+
+````
 
 <h3>Object:</h3>
 <p>a data field that has unique attributes and behavior</p>

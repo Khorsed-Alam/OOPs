@@ -270,4 +270,55 @@ public class Main {
 
 ````
 
-<h3> </h3>
+<h3>Return Value from Method </h3>
+<p>Use appropriate return type and return keyword</p>
+
+```java
+package Return_Value_From_Method;
+
+public class ReturningValue {
+    int Value;
+    int square(int value){
+        Value=value;
+        return  Value *Value;
+
+    }
+}
+
+```
+
+```java
+   package Return_Value_From_Method;
+
+public class Main {
+    public static void main(String[] args) {
+        ReturningValue ob=new ReturningValue();
+        int result = ob.square(5);
+        System.out.println(result);
+
+    }
+}
+
+```
+<h3>Difference between Constructor and Method</h3>
+
+| Constructor                                     | Method                                       |
+|-------------------------------------------------|----------------------------------------------|
+| initialize the state of an object               | Expose behaviour of object                   |
+| No Return type                                  | Must have Return Type                        |
+| Invoked implicitly (to call)                    | Invoke explicitly(to call)                   |
+| Constructor name must be same as the class name | method Name should not be same as class name |
+
+
+<h3> Static Keyword </h3>
+<p>Static keyword in java in Java indicates that a particular member is not an instance, but rather part of a type</p>
+<p>Memory management(Static Variable are keep one address into the memory)but instance are took memory for every object</p>
+<p>Static varibale is not related to object ;it is related to class</p>
+
+
+<h4>Uses Static key</h4>
+<ol>
+<li>Static Variable</li>
+<li>Static Method</li>
+<li>Static Block</li>
+</ol>

@@ -308,3 +308,55 @@ public class Main {
 | No Return type                                  | Must have Return Type                        |
 | Invoked implicitly (to call)                    | Invoke explicitly(to call)                   |
 | Constructor name must be same as the class name | method Name should not be same as class name |
+
+
+<h3> Static Keyword </h3>
+<p>Static keyword in java in Java indicates that a particular member is not an instance, but rather part of a type</p>
+<p>Memory management(Static Variable are keep one address into the memory)but instance are took memory for every object</p>
+<p>Static varibale is not related to object ;it is related to class</p>
+
+
+<h4>Uses Static key</h4>
+<ol>
+<li>Static Variable</li>
+<li>Static Method</li>
+<li>Static Block</li>
+</ol>
+
+````java
+package Static_Keyword;
+
+public class Student {
+    String  name;
+    String id;
+    static  String university_name;
+    Student(String n,String I){
+        name=n;
+        id=I;
+    }
+    void Display(){
+        System.out.println("Name: "+name);
+        System.out.println("ID: "+id);
+        System.out.println("University_Name: "+university_name);
+        System.out.println();
+    }
+}
+
+````
+
+````java
+package Static_Keyword;
+
+public class Main {
+    public static void main(String[] args) {
+        Student ob= new Student("Khorsed","0112330472");
+        ob.Display();
+        Student ob2= new Student("Khorsed Alam","011452330472");
+        ob2.Display();
+
+
+    }
+
+}
+
+````

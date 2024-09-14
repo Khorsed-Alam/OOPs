@@ -124,12 +124,53 @@ public class Main {
 
 ````
 <h3>Constructor</h3>
-<p>Constructor is Special type of method which has no return type.<br/>
-Class name and Constructor Name Same.
-</p>
+<p>Constructor is a special type of method that is use to initialize the object</p>
+<p>Constructor name and class name are same</p>
+<p>Constructor has no return type not even Void</p>
+<p>it called Automatically</p>
+<p>Default Constructor(Non Parameter) , Parameterized </p>
 
 ````java
+package Constructor;
+
+public class Teacher {
+    String  name;
+    String gender;
+    int phone;
+    Teacher(String N, String g, int ph ){
+        name=N;
+        gender=g;
+        phone=ph;
+    }
+    void Display(){
+        System.out.println("Name: "+name);
+        System.out.println("Gender: "+gender);
+        System.out.println("Phone: "+phone);
+        System.out.println();
+    }
+}
+
 
 ````
+
+```java
+package Constructor;
+
+public class Main {
+    public static void main(String[] args) {
+        Teacher ob= new Teacher("Khorsed","male",2442526);
+        ob.Display();
+
+        Teacher ob1= new Teacher("Khorsed Alam","Male",59276);
+        ob1.Display();
+    }
+}
+
+```
+<h3>Types of Constructor</h3>
+<ol>
+<li>Default Constructor(No Para meter) </li>
+<li>Parametrized Constructor(Para Meter) </li>
+</ol>
 
 

@@ -173,4 +173,46 @@ public class Main {
 <li>Parametrized Constructor(Para Meter) </li>
 </ol>
 
+```java
+package Default_Parameterized_Constructor;
 
+public class Teacher {
+    String Name;
+    String Gender;
+    int age;
+
+    Teacher(){
+        System.out.println("No value");
+    }
+    Teacher(String N, String G, int A){
+        Name=N;
+        Gender=G;
+        age=A;
+    }
+
+    void Display(){
+        System.out.println("Name: "+Name);
+        System.out.println("Gender: "+Gender);
+        System.out.println("Age : "+age);
+        System.out.println();
+    }
+}
+
+```
+
+```java
+package Default_Parameterized_Constructor;
+
+public class Main {
+    public static void main(String[] args) {
+        Teacher ob= new Teacher("khorsed alam","male",34);
+        ob.Display();
+
+        Teacher ob1= new Teacher();
+        ob1.Display();
+
+
+    }
+}
+
+```

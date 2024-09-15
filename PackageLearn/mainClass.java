@@ -7,6 +7,12 @@ import java.util.Scanner; // import only Scanner CLass
 
 public class mainClass {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        person p1= new person();
+        p1.setName("Khorsed Alam");
+        System.out.println(p1.getName());
+
+        p1.setId("0112330472");
+        System.out.println(p1.getId());
+
     }
 }

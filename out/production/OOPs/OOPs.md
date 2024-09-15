@@ -743,3 +743,48 @@ public class Main {
 </ul>
 
 <h3>Setter and Getter </h4>
+<p> to set data use setter method</p>
+<p>To get data use Getter Method</p>
+
+````java
+package Encapsulation;
+
+public class person {
+    private  String name;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    private int age;
+
+
+}
+
+````
+````java
+package Encapsulation;
+
+public class Main {
+    public static void main(String[] args) {
+        person p1 = new person();
+        p1.setName("Khorsed Alam");
+        p1.setAge(20);
+        System.out.println(p1.getName());
+        System.out.println(p1.getAge());
+    }
+}
+
+````

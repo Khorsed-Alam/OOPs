@@ -389,3 +389,78 @@ public class main {
 ````
 
 <h3> Static Variable </h3>
+<p>Count Object number By Static keyword</p>
+
+```java
+package Static_Variable3;
+
+public class Student {
+    static  int count=0;
+    Student(){
+        count++;
+    }
+    void TotalStudent(){
+        System.out.println("Total Student: "+count);
+    }
+}
+
+```
+```java
+package Static_Variable3;
+
+public class Main {
+    public static void main(String[] args) {
+        Student ob= new Student();
+        ob.TotalStudent();
+        Student ob1=new Student();
+        ob1.TotalStudent();
+
+        Student ob2= new Student();
+        ob2.TotalStudent();
+    }
+}
+
+```
+
+<h3>Static Method 112 </h3>
+<p>To call Static static method we dont need any type of object</p>
+
+<strong> Access Static Method: {Class.(static method)} </strong>
+
+````java
+package Static_Method;
+
+public class staticMethod {
+
+    void Display(){
+        System.out.println("I am non static Method");
+    }
+    static void Display1(){
+        System.out.println("I am Static Method");
+    }
+    static void Display2(){
+        System.out.println("3");
+        System.out.println();
+    }
+}
+
+````
+
+````java
+package Static_Method;
+
+public class Main {
+    public static void main(String[] args) {
+      staticMethod.Display1();
+      staticMethod.Display2();
+    }
+}
+
+````
+
+<h3> Static Method Restriction </h3>
+
+<ul>
+<li>Static Method can not use non static member</li>
+<li>"this" and "super" keyword can not be used here.</li>
+</ul>

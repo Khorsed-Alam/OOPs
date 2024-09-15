@@ -421,3 +421,79 @@ public class Main {
 }
 
 ```
+
+<h3>Static Method 112 </h3>
+<p>To call Static static method we dont need any type of object</p>
+
+<strong> Access Static Method: {Class.(static method)} </strong>
+
+````java
+package Static_Method;
+
+public class staticMethod {
+
+    void Display(){
+        System.out.println("I am non static Method");
+    }
+    static void Display1(){
+        System.out.println("I am Static Method");
+    }
+    static void Display2(){
+        System.out.println("3");
+        System.out.println();
+    }
+}
+
+````
+
+````java
+package Static_Method;
+
+public class Main {
+    public static void main(String[] args) {
+      staticMethod.Display1();
+      staticMethod.Display2();
+    }
+}
+
+````
+
+<h3> Static Method Restriction </h3>
+
+<ul>
+<li>Static Method can not use non static member</li>
+<li>"this" and "super" keyword can not be used here.</li>
+</ul>
+
+```java
+package Static_Method_Restriction;
+
+public class Static_Method {
+    static  int x=10;
+    void display(){
+        System.out.println("I am non static method");
+
+    }
+    static void Display (){
+        System.out.println(" "+x);
+        System.out.println("Hello world");
+       // void display();
+    }
+}
+
+```
+
+````java
+package Static_Method_Restriction;
+
+public class Main {
+    public static void main(String[] args) {
+         Static_Method.Display();
+//         Static_Method.dispaly();
+// Error because Static Method can not use non static
+
+    }
+
+}
+
+````

@@ -1,4 +1,4 @@
-package OOP;
+package Class_Object;
 
 public class Teacher {
     String name;

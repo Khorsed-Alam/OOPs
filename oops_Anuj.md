@@ -104,3 +104,5 @@ public class mainClass {
 }
 
 ```
+
+<h3> The Static Keyword</h3>

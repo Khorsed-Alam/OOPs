@@ -627,3 +627,51 @@ public class Main {
 <li>Parameter list Different</li>
 <li>Inside the same class</li>
 </ol>
+
+```java
+package Method_Overloading;
+
+public class methodOverload {
+     void  add(int a,int b){
+         System.out.println(a+b);
+     }
+     void add(double a, double b){
+         System.out.println(a+b);
+     }
+     void add(int a, int b, int c){
+         System.out.println(a+b+c);
+     }
+     void add(){
+         System.out.println("No output");
+     }
+
+}
+
+```
+````java
+package Method_Overloading;
+
+public class Main {
+    public static void main(String[] args) {
+        methodOverload ob= new methodOverload();
+        ob.add();
+        ob.add(1,4);
+        ob.add(2.4,3.5);
+        ob.add(3,4,5);
+    }
+}
+
+````
+
+<h3> Automatic Type Conversion </h3>
+
+|Type| Valid Promotions|
+|---|----|
+|Double|none|
+|float| double|
+|long|float or double|
+|int |long , float or double|
+|char |int , long ,float or double|
+|short| int ,long,float or double|
+|byte| short,int,long,float or double|
+|boolean|boolean|

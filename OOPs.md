@@ -662,3 +662,16 @@ public class Main {
 }
 
 ````
+
+<h3> Automatic Type Conversion </h3>
+
+|Type| Valid Promotions|
+|---|----|
+|Double|none|
+|float| double|
+|long|float or double|
+|int |long , float or double|
+|char |int , long ,float or double|
+|short| int ,long,float or double|
+|byte| short,int,long,float or double|
+|boolean|boolean|

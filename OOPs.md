@@ -598,3 +598,22 @@ public class Main {
 }
 
 ```
+
+<h3>Math Builtin Function </h3>
+<b>Math Function</b>
+<ol>
+<li>{Math.abd(9.4)} -->Convert positive number</li>
+<li>{Math.sqrt(25.0)} --> root form </li>
+<li>{Math.pow(2,3)} -->2^3 </li>
+<li>{Math.PI}--> Return pi value </li>
+<li>{Math.e}--> Return E value </li>
+<li>{Math.log(0.0)} --> Return log(0) value</li>
+<li>{Math.exp(1.0)} --> Return exponentioal value value</li>
+<li>{Math.max(2,3)} --> Return Max value</li>
+<li>{Math.min(2,3)} --> Return Min value</li>
+<li>{Math.ceil(5.6)} --> Upper Integer Number </li>
+<li>{Math.floor(5.6)} --> lower Integer Number </li>
+
+
+
+</ol>

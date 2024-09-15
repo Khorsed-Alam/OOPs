@@ -561,3 +561,59 @@ public class staticBlock_Main {
 <li>Instance : A varable that is declare inside the class but outside any method ---> Not a Static</li>
 <li>Class / Static: A variable that start with static keyword. --> Its Can not declared as local variable</li>
 </ol>
+
+<h3> Instance Variable hiding </h3>
+<p>Instance variable hide using "this" keyword </p>
+
+```java
+package Instance_Variable_hiding;
+
+import java.util.SplittableRandom;
+
+public class Student {
+    String name;
+    String gender;
+    int age;
+    Student(String name, String gender,int age){
+        this.name=name;
+        this.gender=gender;
+        this.age=age;
+    }
+    void Display(){
+        System.out.println(name);
+        System.out.println(gender);
+        System.out.println(age);
+    }
+}
+
+```
+```java
+package Instance_Variable_hiding;
+
+public class Main {
+    public static void main(String[] args) {
+        Student ob=new Student("khorsed","male",29);
+        ob.Display();
+    }
+}
+
+```
+
+<h3>Math Builtin Function </h3>
+<b>Math Function</b>
+<ol>
+<li>{Math.abd(9.4)} -->Convert positive number</li>
+<li>{Math.sqrt(25.0)} --> root form </li>
+<li>{Math.pow(2,3)} -->2^3 </li>
+<li>{Math.PI}--> Return pi value </li>
+<li>{Math.e}--> Return E value </li>
+<li>{Math.log(0.0)} --> Return log(0) value</li>
+<li>{Math.exp(1.0)} --> Return exponentioal value value</li>
+<li>{Math.max(2,3)} --> Return Max value</li>
+<li>{Math.min(2,3)} --> Return Min value</li>
+<li>{Math.ceil(5.6)} --> Upper Integer Number </li>
+<li>{Math.floor(5.6)} --> lower Integer Number </li>
+
+
+
+</ol>

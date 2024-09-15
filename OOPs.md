@@ -711,3 +711,33 @@ public class Main {
 }
 
 ```
+
+
+<h3>Access Modifier </h3>
+<p>There are four type of access modifier</p>
+<ol>
+<li>Private---> private int age;</li>
+<li>Protected---> protected int age </li>
+<li>Public ---> public int age</li>
+<li>Default --->default </li>
+</ol>
+
+<h1>Encapsulation</h1>
+
+<p>Encapsulation is a process of-->{ Packaging Variable and method into a single unit}---->{Protecting data by declaring them as private } </p>
+
+<p>Private data will be hidden from other classes and they can only be accessed through the methods of their current class this is known as data hiding</p>
+
+<h4> How to do Encapsulation </h4>
+<ol>
+<li>Declare the variables as Private</li>
+<li>Provide public setter and getter method to modify and get the variable values</li>
+</ol>
+
+<h4>Benefits of Encapsulation </h4>
+<ul>
+<li>provides data hiding</li>
+<li>Reusability </li>
+<li>Code can be modified without breaking the code</li>
+<li>Maintainability : Hiding implementation details  reduces complexity </li>
+</ul>

@@ -464,3 +464,72 @@ public class Main {
 <li>Static Method can not use non static member</li>
 <li>"this" and "super" keyword can not be used here.</li>
 </ul>
+
+```java
+package Static_Method_Restriction;
+
+public class Static_Method {
+    static  int x=10;
+    void display(){
+        System.out.println("I am non static method");
+
+    }
+    static void Display (){
+        System.out.println(" "+x);
+        System.out.println("Hello world");
+       // void display();
+    }
+}
+
+```
+
+````java
+package Static_Method_Restriction;
+
+public class Main {
+    public static void main(String[] args) {
+         Static_Method.Display();
+//         Static_Method.dispaly();
+// Error because Static Method can not use non static
+
+    }
+
+}
+
+````
+
+<h3> Static Block </h3>
+<P>All Element are static into the Block</P>
+
+```java
+package Static_Block;
+
+public class Static_Block {
+    static  int id;
+    static  String name;
+
+    static {
+        id=112330472;
+        name= "Khorsed Alam";
+    }
+    static void DisplayStatic(){
+        System.out.println("Id: "+id);
+        System.out.println("Name: "+name);
+    }
+}
+
+```
+```java
+package Static_Block;
+
+import Static_Method_Restriction.Static_Method;
+
+public class Main {
+    public static void main(String[] args) {
+      Static_Block.DisplayStatic();
+    }
+}
+
+```
+
+<strong> If static block and main method stand into the same class then static block execute first </strong>

@@ -497,3 +497,57 @@ public class Main {
 }
 
 ````
+
+<h3> Static Block </h3>
+<P>All Element are static into the Block</P>
+
+```java
+package Static_Block;
+
+public class Static_Block {
+    static  int id;
+    static  String name;
+
+    static {
+        id=112330472;
+        name= "Khorsed Alam";
+    }
+    static void DisplayStatic(){
+        System.out.println("Id: "+id);
+        System.out.println("Name: "+name);
+    }
+}
+
+```
+```java
+package Static_Block;
+
+import Static_Method_Restriction.Static_Method;
+
+public class Main {
+    public static void main(String[] args) {
+      Static_Block.DisplayStatic();
+    }
+}
+
+```
+
+<strong> If static block and main method stand into the same class then static block execute first </strong>
+
+```java
+package Static_Block;
+
+public class staticBlock_Main {
+
+    public static void main(String[] args) {
+        System.out.println("Main Method");
+    }
+
+    static {
+        System.out.println("Static Block");
+    }
+
+
+}
+
+```

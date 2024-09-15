@@ -533,3 +533,31 @@ public class Main {
 ```
 
 <strong> If static block and main method stand into the same class then static block execute first </strong>
+
+```java
+package Static_Block;
+
+public class staticBlock_Main {
+
+    public static void main(String[] args) {
+        System.out.println("Main Method");
+    }
+
+    static {
+        System.out.println("Static Block");
+    }
+
+
+}
+
+```
+
+
+<h3>Variable Type</h3>
+
+<p>There are three type of variable in java</p>
+<ol>
+<li>Local : Local variable is Declared inside method constructor or in a block</li>
+<li>Instance : A varable that is declare inside the class but outside any method ---> Not a Static</li>
+<li>Class / Static: A variable that start with static keyword. --> Its Can not declared as local variable</li>
+</ol>

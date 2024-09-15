@@ -561,3 +561,40 @@ public class staticBlock_Main {
 <li>Instance : A varable that is declare inside the class but outside any method ---> Not a Static</li>
 <li>Class / Static: A variable that start with static keyword. --> Its Can not declared as local variable</li>
 </ol>
+
+<h3> Instance Variable hiding </h3>
+<p>Instance variable hide using "this" keyword </p>
+
+```java
+package Instance_Variable_hiding;
+
+import java.util.SplittableRandom;
+
+public class Student {
+    String name;
+    String gender;
+    int age;
+    Student(String name, String gender,int age){
+        this.name=name;
+        this.gender=gender;
+        this.age=age;
+    }
+    void Display(){
+        System.out.println(name);
+        System.out.println(gender);
+        System.out.println(age);
+    }
+}
+
+```
+```java
+package Instance_Variable_hiding;
+
+public class Main {
+    public static void main(String[] args) {
+        Student ob=new Student("khorsed","male",29);
+        ob.Display();
+    }
+}
+
+```

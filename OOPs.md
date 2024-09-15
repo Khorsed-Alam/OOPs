@@ -788,3 +788,24 @@ public class Main {
 }
 
 ````
+
+<h1>Inheritance</h1>
+<p><b>Definition:</b> Inheritance can be defined as the process where one class acquires(share) the properties of another</p>
+
+<em> Syntax</em>
+
+```java
+class  Teacher extends Person{
+    // Teacher --> Subclass / Child Class/ Derived Class
+    // Person --> Parent Class/ Super Class/ Base Class
+    
+}
+```
+
+<b>Uses of Inheritance</b>
+<ol>
+<li>Reusability</li>
+<li>Method Overriding </li>
+</ol>
+
+

@@ -675,3 +675,39 @@ public class Main {
 |short| int ,long,float or double|
 |byte| short,int,long,float or double|
 |boolean|boolean|
+
+```java
+package Automatic_Type_Conversion;
+
+public class Overload {
+    void add(double a, double b){
+        System.out.println(a+b);
+    }
+    void add(int a, int b, int c){
+        System.out.println(a+b+c);
+    }
+    void add(){
+        System.out.println("Nothing to add");
+    }
+}
+
+```
+
+```java
+package Automatic_Type_Conversion;
+
+public class Main {
+    public static void main(String[] args) {
+        Overload ob=new Overload();
+
+        ob.add();
+
+        ob.add(3,6);
+
+        ob.add(5.6,6.4);
+
+        ob.add(2,4,5);
+    }
+}
+
+```

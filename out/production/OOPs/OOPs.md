@@ -367,5 +367,25 @@ public class Main {
 <p>To Access Static function {Class.(static variable, method,block)}</p>
 
 ```java
+package Static_Variable;
+
+public class Static_Variable {
+    static  String name="khorsed alam";
+
+}
 
 ```
+
+````java 
+package Static_Variable;
+
+public class main {
+    public static void main(String[] args) {
+        System.out.println(Static_Variable.name);
+        
+    }
+}
+
+````
+
+<h3> Static Variable </h3>

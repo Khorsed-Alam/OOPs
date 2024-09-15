@@ -376,7 +376,7 @@ public class Static_Variable {
 
 ```
 
-````java
+````java 
 package Static_Variable;
 
 public class main {
@@ -387,3 +387,37 @@ public class main {
 }
 
 ````
+
+<h3> Static Variable </h3>
+<p>Count Object number By Static keyword</p>
+
+```java
+package Static_Variable3;
+
+public class Student {
+    static  int count=0;
+    Student(){
+        count++;
+    }
+    void TotalStudent(){
+        System.out.println("Total Student: "+count);
+    }
+}
+
+```
+```java
+package Static_Variable3;
+
+public class Main {
+    public static void main(String[] args) {
+        Student ob= new Student();
+        ob.TotalStudent();
+        Student ob1=new Student();
+        ob1.TotalStudent();
+
+        Student ob2= new Student();
+        ob2.TotalStudent();
+    }
+}
+
+```

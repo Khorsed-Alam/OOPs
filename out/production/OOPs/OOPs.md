@@ -617,3 +617,13 @@ public class Main {
 
 
 </ol>
+
+
+<h3>Method Overloading</h3>
+<p> multiple methods can have the same name but different parameters</p>
+<p> Point to remember about Method Overloaring </p>
+<ol>
+<li>Same method name</li>
+<li>Parameter list Different</li>
+<li>Inside the same class</li>
+</ol>

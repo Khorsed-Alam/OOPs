@@ -617,3 +617,48 @@ public class Main {
 
 
 </ol>
+
+
+<h3>Method Overloading</h3>
+<p> multiple methods can have the same name but different parameters</p>
+<p> Point to remember about Method Overloaring </p>
+<ol>
+<li>Same method name</li>
+<li>Parameter list Different</li>
+<li>Inside the same class</li>
+</ol>
+
+```java
+package Method_Overloading;
+
+public class methodOverload {
+     void  add(int a,int b){
+         System.out.println(a+b);
+     }
+     void add(double a, double b){
+         System.out.println(a+b);
+     }
+     void add(int a, int b, int c){
+         System.out.println(a+b+c);
+     }
+     void add(){
+         System.out.println("No output");
+     }
+
+}
+
+```
+````java
+package Method_Overloading;
+
+public class Main {
+    public static void main(String[] args) {
+        methodOverload ob= new methodOverload();
+        ob.add();
+        ob.add(1,4);
+        ob.add(2.4,3.5);
+        ob.add(3,4,5);
+    }
+}
+
+````

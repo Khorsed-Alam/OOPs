@@ -21,3 +21,25 @@
 <p>For import all package use --> {import java.io.*;}</p>
 <p>Import only one class use --> {import java.util.(class_name);} Example : User input [using Scanner class] </p>
 <p> import statement is written directly after package statement and before the class definition </p>
+
+````java
+class Animal {
+    private void display() {// private method
+
+    }
+
+    public void Display() {// public method
+
+    }
+}
+````
+
+<h4>Access Modifer </h4>
+<p>Access MOdifer are use to set accessibility (visibility) of Class , Interface , Variable , Method, Constructor, Data member and the setter methods</p>
+<b>Type of Access Modifer</b>
+<ol>
+<li>Default ---> Only one Pack is possible </li>
+<li>Private ---> only one class</li>
+<li>Protected--->immediate child can Access---> condition(all package but immediate child) </li>
+<li>Public  ---> All Package are possible </li>
+</ol>

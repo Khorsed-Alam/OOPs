@@ -1039,3 +1039,70 @@ public class d extends  b,c{
     
 }
 ```
+
+
+<h2>Method Overriding</h2>
+<p>Declaring a method in subclass which is already present in superclass is known as Method Overriding </p>
+<p>Name , Parameter , and return type same as superclass </p>
+
+<h5>Use of Method Overriding </h5>
+<ol>
+<li>Code reuse</li>
+<li> One Interface , Multiple Implement </li>
+<li>Run time Polymorphism </li>
+</ol>
+
+<h5> Method Override rule</h5>
+<ul>
+<li>Name , Signature type , parameter must be same</li>
+<li>If method cann't be Inherited then it cann't be overridden</li>
+<li>final and static Keyword cann't be overridden</li>
+<li>Constructor can not be overridden </li>
+</ul>
+
+
+```java
+package Method_Overriding;
+
+public class Person {
+    String name;
+    int age;
+
+    void Display(){
+        System.out.println(name);
+        System.out.println(age);
+    }
+}
+
+```
+
+```java
+package Method_Overriding;
+
+public class Teacher extends Person {
+    String qualification;
+
+    void Display(){
+        System.out.println(name);
+        System.out.println(age);
+        System.out.println(qualification);
+    }
+
+}
+
+```
+
+```java
+package Method_Overriding;
+public class Main {
+    public static void main(String[] args) {
+       Teacher T1 = new Teacher();
+       T1.name="Khorsed Alam";
+       T1. age=20;
+       T1.qualification="Phd";
+
+       T1.Display();
+    }
+}
+
+```

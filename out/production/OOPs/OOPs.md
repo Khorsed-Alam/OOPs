@@ -931,3 +931,131 @@ public class Main {
 <h3>Instanceof Operator</h3>
 <p>Instance = object </p>
 <p> Instance of operator return boolean value </p>
+
+````java
+package Instanceof_Operator;
+
+public class Animal {
+}
+
+````
+
+```java
+package Instanceof_Operator;
+
+public class Person extends  Animal{
+}
+
+```
+
+````java
+package Instanceof_Operator;
+
+public class Teacher extends  Person {
+
+}
+
+````
+```java
+package Instanceof_Operator;
+
+public class Main {
+    public static void main(String[] args) {
+        Animal A1 = new Animal();
+        Person P1 = new Person();
+        Teacher T1 = new Teacher();
+
+        System.out.println(T1 instanceof Person);
+        System.out.println(P1 instanceof Animal);
+        System.out.println(A1 instanceof  Person);
+    }
+}
+
+```
+
+<h3> Types of Inheritance </h3>
+<ol>
+<li>Single inheritance </li>
+<li>Multilevel Inheritance </li>
+<li>Hierarchical inheritance </li>
+<li>Multiple Inheritance </li>
+</ol>
+
+<h4> Single Inheritance </h4>
+<p>One subclass inherits from one superclass</p>
+
+```java
+public class a{
+    
+}
+public class b extends a{
+    
+}
+```
+
+<h4>Multilevel Inheritance </h4>
+<p>The Super Class for one is the subclass for other </p>
+
+````java
+public class a{
+
+}
+public class b extends a{
+
+}
+public class c extends b{
+    
+}
+````
+<h4> Hierarchical Inheritance </h4>
+<p> Multiple subclass derived from single superclass </p>
+
+````java
+public class a{
+
+}
+public class b extends a{
+
+}
+public class c extends a{
+    
+}
+````
+
+<h4>Multiple Inheritance</h4>
+<p>java cann`t support this inheritance</p>
+
+```java
+public class a{
+
+}
+public class b extends a{
+
+}
+public class c extends a{
+
+}
+public class d extends  b,c{
+    
+}
+```
+
+
+<h2>Method Overriding</h2>
+<p>Declaring a method in subclass which is already present in superclass is known as Method Overriding </p>
+<p>Name , Parameter , and return type same as superclass </p>
+
+<h5>Use of Method Overriding </h5>
+<ol>
+<li>Code reuse</li>
+<li> One Interface , Multiple Implement </li>
+<li>Run time Polymorphism </li>
+</ol>
+
+<h5> Method Override rule</h5>
+<ul>
+<li>Name , Signature type , parameter must be same</li>
+<li>If method cann't be Inherited then it cann't be overridden</li>
+<li>final and static Keyword cann't be overridden</li>
+<li>Constructor can not be overridden </li>
+</ul>

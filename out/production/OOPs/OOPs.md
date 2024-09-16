@@ -808,4 +808,57 @@ class  Teacher extends Person{
 <li>Method Overriding </li>
 </ol>
 
+````java
+package Inheritance;
 
+public class Person {
+    String Name;
+    int age;
+
+    void Display(){
+        System.out.println("Name: "+Name);
+        System.out.println("Age: "+age);
+    }
+}
+
+````
+
+```java
+package Inheritance;
+
+public class Teacher extends Person{
+    // Name,age,Display()
+
+String Qualification;
+
+void Display2(){
+    // Display(); Reuse
+    System.out.println("Name :"+Name);
+    System.out.println("Age: "+age);
+    System.out.println("Qualificarion: "+Qualification);
+}
+
+}
+
+```
+
+````java
+package Inheritance;
+
+public class Main {
+    public static void main(String[] args) {
+        Teacher T1= new Teacher();
+        T1.Name="Khorsed Alam";
+        T1.age=20;
+        T1.Qualification="phd";
+
+        T1.Display2();
+
+    }
+}
+
+````
+
+
+<h3> Inheriting Private Member</h3> 
+<p>Private member Cannot be inherit directly. We can use private properties using getter and setter </p>

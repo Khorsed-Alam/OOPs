@@ -1132,3 +1132,35 @@ public class Main {
 </ol>
 
 <strong>Super Class instance Variable<Strong>
+```java
+package Super_instance_variable;
+
+public class A {
+    int x=10;
+
+}
+
+```
+```java
+package Super_instance_variable;
+
+public class B extends A{
+     int x=5;
+     void Display(){
+         System.out.println(super.x);
+     }
+}
+
+```
+
+```java
+package Super_instance_variable;
+
+public class Main {
+    public static void main(String[] args) {
+        B a1= new B();
+        a1.Display();
+    }
+}
+
+```

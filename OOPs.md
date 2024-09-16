@@ -1164,3 +1164,40 @@ public class Main {
 }
 
 ```
+
+<b> Super_Overridden_Method</b>
+
+````java
+package Super_Overridden_Method;
+
+public class A {
+    void Display(){
+        System.out.println("Inside A Class");
+    }
+}
+
+````
+```java
+package Super_Overridden_Method;
+
+public class B extends A{
+    void Display(){
+        super.Display();
+        //System.out.println("Inside B Class");
+    }
+}
+
+```
+
+```java
+package Super_Overridden_Method;
+
+public class Main {
+    public static void main(String[] args) {
+        B ob=new B();
+        ob.Display();
+    }
+
+}
+
+```

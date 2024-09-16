@@ -1106,3 +1106,14 @@ public class Main {
 }
 
 ```
+
+
+<h2> Method Overloading vs Method Overriding</h2>
+
+|Overload| Override                           |
+|----|------------------------------------|
+| Single Class| Multiple Class(super and sub)Class |
+|Parameter must different| Parameter must be same|
+|no inheritance concept|Must use Inheritance|
+|Return type doesn't metter| Must be same return type|
+|don't hide any method| Child method hide parent method|

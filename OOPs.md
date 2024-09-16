@@ -1201,3 +1201,40 @@ public class Main {
 }
 
 ```
+
+<h3>Super Keyword Constructor</h3>
+<p> First print super class constructor then child class constructor </p>
+<p> if super class put later into the code then code will error </p>
+
+```java
+package Super_keword_Constant;
+
+public class A {
+    A(){
+        System.out.println("A's Constructor");
+    }
+}
+
+```
+
+```java
+package Super_keword_Constant;
+
+public class B extends A{
+    B(){
+        super();
+        System.out.println("B's Constructor");
+    }
+}
+
+```
+```java
+package Super_keword_Constant;
+
+public class Main {
+    public static void main(String[] args) {
+        B ob = new B();
+    }
+}
+
+```

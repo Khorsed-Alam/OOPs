@@ -1309,25 +1309,36 @@ package This_Keyword;
 public class Person {
     String name;
     int age;
+    String haircolor;
     Person (String name, int age){
         this.name=name;
         this.age= age;
     }
+    Person(String name , int age, String haircolor){
+        this(name,age);
+        this.haircolor= haircolor;
+    }
     void Display(){
         System.out.println(name);
         System.out.println(age);
+        System.out.println(haircolor);
+        System.out.println();
     }
 }
+
 
 ```
 
 ```java
-package This_Keyword;
+ package This_Keyword;
 
 public class Main {
     public static void main(String[] args) {
         Person p1= new Person("Khorsed",20);
         p1.Display();
+
+        Person p2= new Person("Khorsed",39,"black");
+        p2.Display();
     }
 }
 

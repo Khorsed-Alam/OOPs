@@ -1343,3 +1343,32 @@ public class Main {
 }
 
 ```
+
+<h5>This use in method</h5>
+```java
+package This_Method;
+
+public class Person {
+    void massage(){
+        System.out.println("This is message method");
+
+    }
+    void Display(){
+        this.massage();
+        System.out.println("This is Message Method");
+    }
+}
+
+```
+
+````java
+package This_Method;
+
+public class Main {
+    public static void main(String[] args) {
+        Person p1= new Person();
+        p1.Display();
+    }
+}
+
+````

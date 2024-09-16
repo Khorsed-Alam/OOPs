@@ -1526,3 +1526,98 @@ public class Main {
 <li>Method Overriding </li>
 </ul>
 </ol>
+
+
+```java
+package Polymorphism;
+
+public class Person {
+    void Display(){
+        System.out.println("I am a Person");
+    }
+}
+
+```
+```java
+package Polymorphism;
+
+public class Teacher extends Person{
+    void Display(){
+        System.out.println("I am a Teacher");
+    }
+}
+
+```
+```java
+package Polymorphism;
+
+public class Student extends Person{
+    void Display(){
+        System.out.println("I am a Student");
+    }
+}
+
+```
+```java
+package Polymorphism;
+
+public class Main {
+    public static void main(String[] args) {
+        Person P1= new Person();
+        P1.Display();
+
+       // Person P1= new Teacher();
+        P1= new Teacher();
+        P1.Display();
+
+        P1= new Student();
+        P1.Display();
+    }
+}
+
+```
+
+<h2>Abstraction</h2>
+<p>Abstraction is the process of hiding the implementation details and showing only the functionality to the user. </p>
+<p>Hide back end work from user</p>
+
+<Strong> There are two ways to achieve abstraction in Java </Strong>
+<ol>
+<li>Abstract Class (0-100)% Programmer can change this percentage </li>
+<li>Interface (Achieve 100% abstraction )</li>
+
+</ol>
+
+<b>Non abstract Method</b>
+
+````java 
+   
+    void massage(){
+                
+                    
+    }
+````
+<h3>Abstract Method</h3>
+```java
+abstract void massage();
+```
+
+<h4>Condition for Abstract Method</h4>
+<ol>
+<li>Abstract Mehod has no body</li>
+<li>Method end with semicolon</li>
+<li>Method must be part of abstract class</li>
+<li>must be Overridden</li>
+<li>Abstract method can never be final and Static </li>
+</ol>
+
+<h3>Abstract Class</h3>
+<p>Condition on Abstract Class</p>
+<p> We can not create an object of abstract class but we can use reference variable </p>
+<p>If you extends an abstract class you have to use all it abstract method or you have to declare the class as Abstract itself </p>
+
+<ol>
+<li>Abstract class have abstract and non abstract method</li>
+<li>Non abstract class can not have abstract method </li>
+</ol>
+

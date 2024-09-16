@@ -972,3 +972,70 @@ public class Main {
 }
 
 ```
+
+<h3> Types of Inheritance </h3>
+<ol>
+<li>Single inheritance </li>
+<li>Multilevel Inheritance </li>
+<li>Hierarchical inheritance </li>
+<li>Multiple Inheritance </li>
+</ol>
+
+<h4> Single Inheritance </h4>
+<p>One subclass inherits from one superclass</p>
+
+```java
+public class a{
+    
+}
+public class b extends a{
+    
+}
+```
+
+<h4>Multilevel Inheritance </h4>
+<p>The Super Class for one is the subclass for other </p>
+
+````java
+public class a{
+
+}
+public class b extends a{
+
+}
+public class c extends b{
+    
+}
+````
+<h4> Hierarchical Inheritance </h4>
+<p> Multiple subclass derived from single superclass </p>
+
+````java
+public class a{
+
+}
+public class b extends a{
+
+}
+public class c extends a{
+    
+}
+````
+
+<h4>Multiple Inheritance</h4>
+<p>java cann`t support this inheritance</p>
+
+```java
+public class a{
+
+}
+public class b extends a{
+
+}
+public class c extends a{
+
+}
+public class d extends  b,c{
+    
+}
+```

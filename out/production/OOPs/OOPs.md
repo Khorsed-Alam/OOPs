@@ -1433,3 +1433,38 @@ public class Main {
 <h3>Final Method</h3>
 <p>Final Method can not be overridden but if we want we can inherit this </p>
 
+````java
+package Final_Key_Method;
+
+public class University {
+    final void Display() {
+        System.out.println("University Info");
+    }
+}
+
+````
+
+```java
+package Final_Key_Method;
+
+public class Student extends University {
+    void Display1() {
+        super.Display();
+        System.out.println("Student Info");
+    }
+}
+
+```
+
+```java
+package Final_Key_Method;
+
+public class Main {
+    public static void main(String[] args) {
+        Student S1 = new Student();
+        S1.Display();
+        S1.Display1();
+    }
+}
+
+```

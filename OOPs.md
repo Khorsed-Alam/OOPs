@@ -1468,3 +1468,44 @@ public class Main {
 }
 
 ```
+
+<h3> Final Keyword for Class</h3>
+<p>Final keyword can not extend </p>
+
+```java
+package Final_Key_Class;
+
+final public class University {
+    void Display(){
+        System.out.println("University Info");
+    }
+
+}
+
+```
+
+`````java
+package Final_Key_Class;
+
+public class Student extends University {
+    void Display(){
+        super.Display();
+        System.out.println("Student Info");
+
+    }
+}
+
+`````
+
+```java
+package Final_Key_Class;
+
+public class Main {
+    public static void main(String[] args) {
+        Student ob = new Student();
+        ob.Display();
+
+    }
+}
+
+```

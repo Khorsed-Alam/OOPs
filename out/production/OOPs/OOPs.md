@@ -1343,3 +1343,50 @@ public class Main {
 }
 
 ```
+
+<h5>This use in method</h5>
+
+```java
+package This_Method;
+
+public class Person {
+    void massage(){
+        System.out.println("This is message method");
+
+    }
+    void Display(){
+        this.massage();
+        System.out.println("This is Message Method");
+    }
+}
+
+```
+
+````java
+package This_Method;
+
+public class Main {
+    public static void main(String[] args) {
+        Person p1= new Person();
+        p1.Display();
+    }
+}
+
+````
+
+
+<h2> Final Keyword </h2>
+<p> Using final keyword will restrict the user</p>
+<ol>
+<li>Final Variable</li>
+<li>final Method</li>
+<li>final class </li>
+</ol>
+
+<h4> Final variable</h4>
+<ul>
+<li>final variable</li>
+<li>blank final variable---> Value set by Constructor</li>
+<li>static blank final variable----> Value set by Static block </li>
+</ul>
+

@@ -1059,3 +1059,76 @@ public class d extends  b,c{
 <li>final and static Keyword cann't be overridden</li>
 <li>Constructor can not be overridden </li>
 </ul>
+
+
+```java
+package Method_Overriding;
+
+public class Person {
+    String name;
+    int age;
+
+    void Display(){
+        System.out.println(name);
+        System.out.println(age);
+    }
+}
+
+```
+
+```java
+package Method_Overriding;
+
+public class Teacher extends Person {
+    String qualification;
+
+    void Display(){
+        System.out.println(name);
+        System.out.println(age);
+        System.out.println(qualification);
+    }
+
+}
+
+```
+
+```java
+package Method_Overriding;
+public class Main {
+    public static void main(String[] args) {
+       Teacher T1 = new Teacher();
+       T1.name="Khorsed Alam";
+       T1. age=20;
+       T1.qualification="Phd";
+
+       T1.Display();
+    }
+}
+
+```
+
+
+<h2> Method Overloading vs Method Overriding</h2>
+
+|Overload| Override                           |
+|----|------------------------------------|
+| Single Class| Multiple Class(super and sub)Class |
+|Parameter must different| Parameter must be same|
+|no inheritance concept|Must use Inheritance|
+|Return type doesn't metter| Must be same return type|
+|don't hide any method| Child method hide parent method|
+
+
+
+<h3>Super keyword</h3>
+<p>Super keyword is used to refer immediate super clss object</p>
+
+<h4> Uses of Super Keyword </h4>
+
+<ol>
+<li>It is use to call super class instance variable</li>
+<li>It is use to call super class overridden Method</li>
+<li>It is use to call super class constructor</li>
+</ol>
+
+<strong>Super Class instance Variable<Strong>

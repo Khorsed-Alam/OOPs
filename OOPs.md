@@ -1117,3 +1117,50 @@ public class Main {
 |no inheritance concept|Must use Inheritance|
 |Return type doesn't metter| Must be same return type|
 |don't hide any method| Child method hide parent method|
+
+
+
+<h3>Super keyword</h3>
+<p>Super keyword is used to refer immediate super clss object</p>
+
+<h4> Uses of Super Keyword </h4>
+
+<ol>
+<li>It is use to call super class instance variable</li>
+<li>It is use to call super class overridden Method</li>
+<li>It is use to call super class constructor</li>
+</ol>
+
+<strong>Super Class instance Variable<Strong>
+```java
+package Super_instance_variable;
+
+public class A {
+    int x=10;
+
+}
+
+```
+```java
+package Super_instance_variable;
+
+public class B extends A{
+     int x=5;
+     void Display(){
+         System.out.println(super.x);
+     }
+}
+
+```
+
+```java
+package Super_instance_variable;
+
+public class Main {
+    public static void main(String[] args) {
+        B a1= new B();
+        a1.Display();
+    }
+}
+
+```

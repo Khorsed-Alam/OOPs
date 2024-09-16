@@ -1,4 +1,4 @@
-package Super_keword_Constant;
+package Super_Keyword_Constructor;
 
 public class Main {
     public static void main(String[] args) {

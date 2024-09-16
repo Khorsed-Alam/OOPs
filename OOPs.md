@@ -1207,10 +1207,10 @@ public class Main {
 <p> if super class put later into the code then code will error </p>
 
 ```java
-package Super_keword_Constant;
+package Super_Keyword_Constructor;
 
 public class A {
-    A(){
+    A() {
         System.out.println("A's Constructor");
     }
 }
@@ -1218,18 +1218,19 @@ public class A {
 ```
 
 ```java
-package Super_keword_Constant;
+package Super_Keyword_Constructor;
 
-public class B extends A{
-    B(){
+public class B extends A {
+    B() {
         super();
         System.out.println("B's Constructor");
     }
 }
 
 ```
+
 ```java
-package Super_keword_Constant;
+package Super_Keyword_Constructor;
 
 public class Main {
     public static void main(String[] args) {

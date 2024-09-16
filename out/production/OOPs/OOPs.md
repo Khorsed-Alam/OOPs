@@ -1239,3 +1239,59 @@ public class Main {
 }
 
 ```
+
+<h4>Super Keyword (Overridden method and Constructor)</h4>
+
+```java
+package Super_Method_Constructor;
+
+public class Vehicle {
+    String color;
+    double weight ;
+
+    Vehicle(String C , double w)
+    {
+        color=C;
+        weight=w;
+    }
+    void Display(){
+        System.out.println("Color: "+color);
+        System.out.println("Wegiht: "+weight);
+    }
+}
+
+```
+
+```java
+package Super_Method_Constructor;
+
+public class Car extends Vehicle {
+    int gear;
+    Car(String c ,double w, int g){
+        super(c,w);
+        gear = g;
+    }
+    void Display(){
+        super.Display();
+        System.out.println("Gear: "+gear );
+    }
+
+
+}
+
+```
+
+```java
+package Super_Method_Constructor;
+
+public class Main {
+    public static void main(String[] args) {
+        Car volbo = new Car("White",300.0,5);
+        volbo.Display();
+    }
+}
+
+```
+
+
+<h2>This Keyword</h2>

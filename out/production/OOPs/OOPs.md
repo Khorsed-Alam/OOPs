@@ -862,3 +862,72 @@ public class Main {
 
 <h3> Inheriting Private Member</h3> 
 <p>Private member Cannot be inherit directly. We can use private properties using getter and setter </p>
+
+```java
+package Inheriting_Private_Member;
+
+public class Person {
+    private  String name;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    private  int age;
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+}
+
+```
+
+````java
+package Inheriting_Private_Member;
+
+public class Teacher extends Person {
+    private String qualification;
+    public String getQualification() {
+        return qualification;
+    }
+
+    public void setQualification(String qualification) {
+        this.qualification = qualification;
+    }
+    
+}
+
+````
+
+````java
+package Inheriting_Private_Member;
+
+public class Main {
+    public static void main(String[] args) {
+       Teacher T1 = new Teacher();
+       T1.setName("Khorsed");
+       T1.setAge(20);
+       T1.setQualification("PHD");
+
+        System.out.println(T1.getName());
+        System.out.println(T1.getAge());
+        System.out.println(T1.getQualification());
+
+
+    }
+}
+
+````
+
+
+<h3>Instanceof Operator</h3>
+<p>Instance = object </p>
+<p> Instance of operator return boolean value </p>

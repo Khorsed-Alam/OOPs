@@ -1468,3 +1468,61 @@ public class Main {
 }
 
 ```
+
+<h3> Final Keyword for Class</h3>
+<p>Final keyword can not extend </p>
+
+```java
+package Final_Key_Class;
+
+final public class University {
+    void Display(){
+        System.out.println("University Info");
+    }
+
+}
+
+```
+
+`````java
+package Final_Key_Class;
+
+public class Student extends University {
+    void Display(){
+        super.Display();
+        System.out.println("Student Info");
+
+    }
+}
+
+`````
+
+```java
+package Final_Key_Class;
+
+public class Main {
+    public static void main(String[] args) {
+        Student ob = new Student();
+        ob.Display();
+
+    }
+}
+
+```
+
+<h2>Polymorphism</h2>
+<p>Polymorphism means many form</p>
+<p>Polymorphism is a mechanism where a parent class reference variable can take many form (it can refer object from different classes)</p>
+
+<h5>Types of Polymorphism </h5>
+<ol>
+<li>compile time / Static Polymorphism</li>
+  <ul>
+<li>Method overloading </li>
+<li>Constructor Overloading </li>
+</ul>
+<li>Run time / Dynamic Polymorphism</li>
+  <ul>
+<li>Method Overriding </li>
+</ul>
+</ol>

@@ -1509,3 +1509,70 @@ public class Main {
 }
 
 ```
+
+<h2>Polymorphism</h2>
+<p>Polymorphism means many form</p>
+<p>Polymorphism is a mechanism where a parent class reference variable can take many form (it can refer object from different classes)</p>
+
+<h5>Types of Polymorphism </h5>
+<ol>
+<li>compile time / Static Polymorphism</li>
+  <ul>
+<li>Method overloading </li>
+<li>Constructor Overloading </li>
+</ul>
+<li>Run time / Dynamic Polymorphism</li>
+  <ul>
+<li>Method Overriding </li>
+</ul>
+</ol>
+
+
+```java
+package Polymorphism;
+
+public class Person {
+    void Display(){
+        System.out.println("I am a Person");
+    }
+}
+
+```
+```java
+package Polymorphism;
+
+public class Teacher extends Person{
+    void Display(){
+        System.out.println("I am a Teacher");
+    }
+}
+
+```
+```java
+package Polymorphism;
+
+public class Student extends Person{
+    void Display(){
+        System.out.println("I am a Student");
+    }
+}
+
+```
+```java
+package Polymorphism;
+
+public class Main {
+    public static void main(String[] args) {
+        Person P1= new Person();
+        P1.Display();
+
+       // Person P1= new Teacher();
+        P1= new Teacher();
+        P1.Display();
+
+        P1= new Student();
+        P1.Display();
+    }
+}
+
+```

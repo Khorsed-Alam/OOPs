@@ -1,9 +1,8 @@
 package Final_Key_Class;
 
-public class Student extends University {
+public class Student  {
     void Display(){
-        super.Display();
-        System.out.println("Student Info");
+        System.out.println();
 
     }
 }

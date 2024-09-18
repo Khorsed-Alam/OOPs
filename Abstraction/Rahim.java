@@ -6,3 +6,4 @@ package Abstraction;
         System.out.println("hi i am Rahim");
     }
 }
+

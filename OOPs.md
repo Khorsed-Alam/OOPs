@@ -1671,3 +1671,51 @@ public class Main {
 
 ````
 
+<h1>Interface</h1>
+<p>An Interface is a collection of abstract method</p>
+
+<h5>Why do we need an Interface</h5>
+<ol>
+<li>Fully Abstraction</li>
+<li>Multiple Inheritance </li>
+</ol>
+
+<H4>Declaring an Interface</H4>
+<p>Interface keyword is used to declare an interface</p>
+
+<b>Interface Class<b>
+````java
+interface Class_name{
+     
+}
+````
+
+<b>Interface Method<b>
+<p> Only abstract method can be store into the Interface Method </p>
+<B>NB:</B>
+<p>Java Compiler adds public and abstract keyword before the interface method</p>
+
+````java
+interface Class_name{
+     void method_name():// do not need abstract keyword because compiler will provide this.
+}
+````
+
+<h2> Interface Variable</h2>
+<p> We can store variable into the interface class but condition ---> variable must be constant</p>
+
+<p>Java compiler add public , static and fianl keyword before the interface variable, so we can say that all variable are constant into the interface class </p>
+
+```java
+interface Class_name{
+    int speed = 30; // compiler will fixed this as public static final int speed=30
+     void method_name();
+}
+```
+
+<b>Interface Inherit </b>
+<ol>
+<li> Class extends class </li>
+<li>Interface extend Interface</li>
+<li>Interface Implements Class</li>
+</ol>

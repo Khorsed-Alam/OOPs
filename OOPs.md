@@ -1673,6 +1673,7 @@ public class Main {
 
 <h1>Interface</h1>
 <p>An Interface is a collection of abstract method</p>
+<p>We can not create an object of interface</p>
 
 <h5>Why do we need an Interface</h5>
 <ol>
@@ -1719,3 +1720,50 @@ interface Class_name{
 <li>Interface extend Interface</li>
 <li>Interface Implements Class</li>
 </ol>
+
+
+```java
+package Interface;
+
+public interface Animal {
+    public abstract void eat();
+     }
+
+```
+
+```java
+package Interface;
+
+public class   Dog implements Animal{
+    public void eat()
+    {
+        System.out.println("Dog can eat Meat");
+    }
+}
+
+```
+````java
+package Interface;
+
+public class Cat implements Animal {
+    public void eat(){
+        System.out.println("Cat can eat milk");
+    }
+}
+
+````
+
+```java
+package Interface;
+
+public class Main {
+    public static void main(String[] args) {
+      Dog D1= new Dog();
+      D1.eat();
+
+      Cat C1= new Cat();
+      C1.eat();
+    }
+}
+
+```

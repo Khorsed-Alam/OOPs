@@ -1604,7 +1604,7 @@ abstract void massage();
 
 <h4>Condition for Abstract Method</h4>
 <ol>
-<li>Abstract Mehod has no body</li>
+<li>Abstract Method has no body</li>
 <li>Method end with semicolon</li>
 <li>Method must be part of abstract class</li>
 <li>must be Overridden</li>
@@ -1618,6 +1618,6 @@ abstract void massage();
 
 <ol>
 <li>Abstract class have abstract and non abstract method</li>
-<li>Non abstract class can not have abstract method </li>
+<li>Non abstract class can not have any abstract method </li>
 </ol>
 

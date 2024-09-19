@@ -1949,3 +1949,52 @@ public class Main {
 }
 
 ````
+
+
+<h1>Exception Handling </h1>
+<p>What is Exception ----> An Exception is a runtime error</p>
+<p>An Exception is an abnormal condition that arises in a code sequence at run time</p>
+
+<p>OBJECT --> Throwable ---> Error + Exception </p>
+
+
+<b>Different type of Exception</b>
+<ol>
+<li>Arithmetic Exception </li>
+<li>Null Pointer Exception</li>
+<li>StringIndexoutofBoundsException</li>
+<li>Number Format Exception</li>
+<li>File Not Found Exception</li>
+<li>Array index out of Bounds Exception </li>
+<li>Class Not found Exception </li>
+<li>IO Exception</li>
+<li>No SuchMethodException</li>
+<li>
+</ol>
+
+
+<h3>What is Exception Handling</h3>
+<p>The exception handling is one of the powerful mechanism to handle the runtime errors. </p>
+
+<strong>Exception Handling is Managed by five Keyword</strong>
+<ol>
+<li>try</li>
+<li>catch</li>
+<li>finally</li>
+<li>throw</li>
+<li>throws</li>
+</ol>
+
+<h4>try - Catch- finally Block</h4>
+```java
+
+try{
+     //Doubtful program as an exception
+}catch(Exception type1 e1){
+    // First Exception
+}catch(Exception type2 e2){
+    // Second Exception
+}finally{
+    // Block of code to be execute after try block
+        }
+```

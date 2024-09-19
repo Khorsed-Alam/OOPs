@@ -1767,3 +1767,47 @@ public class Main {
 }
 
 ```
+
+<h2> Why Interface Support Multiple Inheritance </h2>
+<p>Java does not support multiple inheritance with classes
+But Java Interface support Multiple Inhertance </p>
+
+````java
+package Multiple_Inheritance_by_Interface;
+
+public interface A {
+    void Play();
+}
+
+````
+```java
+package Multiple_Inheritance_by_Interface;
+
+public interface B {
+    void Play();
+}
+
+```
+````java
+package Multiple_Inheritance_by_Interface;
+
+public class C implements A,B{
+    public void Play(){
+        System.out.println("Hello I am from C");
+    }
+
+
+}
+
+````
+```java
+package Multiple_Inheritance_by_Interface;
+
+public class Main {
+    public static void main(String[] args) {
+          C ob= new C();
+          ob.Play();
+    }
+}
+
+```

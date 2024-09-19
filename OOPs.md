@@ -1863,3 +1863,32 @@ public class Main {
 <li>awt ----> Button / Image / Label / Menu </li>
 <li>applet-----> </li>
 </ol>
+
+
+
+
+
+<h1>Access Modifier </h1>
+<b>Modifier</b>
+<p>Access modifiers in Java are the keywords that are used for controlling the use of the methods, constructors, fields, and methods in a class</p>
+
+<h4> Types of Modifier</h4>
+<ol>
+<li>Access Modifier</li>
+<li>Non Access Modifier </li>
+</ol>
+
+<h4> Access Modifer</h4>
+<ol>
+<li>Private---> Access only same class</li>
+<li>public----> Access any Class or any Package </li>
+<li>protected----> access same package but condition --->class must be inherited or Child class </li>
+<li>Default---> default member will accessable into same package </li>
+</ol>
+
+<h4> Non Access Modifier</h4>
+<ol>
+<li>static</li>
+<li>abstract </li>
+<li>volatile </li>
+</ol>

@@ -1767,3 +1767,128 @@ public class Main {
 }
 
 ```
+
+<h2> Why Interface Support Multiple Inheritance </h2>
+<p>Java does not support multiple inheritance with classes
+But Java Interface support Multiple Inhertance </p>
+
+````java
+package Multiple_Inheritance_by_Interface;
+
+public interface A {
+    void Play();
+}
+
+````
+```java
+package Multiple_Inheritance_by_Interface;
+
+public interface B {
+    void Play();
+}
+
+```
+````java
+package Multiple_Inheritance_by_Interface;
+
+public class C implements A,B{
+    public void Play(){
+        System.out.println("Hello I am from C");
+    }
+
+
+}
+
+````
+```java
+package Multiple_Inheritance_by_Interface;
+
+public class Main {
+    public static void main(String[] args) {
+          C ob= new C();
+          ob.Play();
+    }
+}
+
+```
+
+
+<h4> How interface is similar to a class</h4>
+<ol>
+<li>Interface can have any number of method</li>
+<li>It has same file extension as java class </li>
+<li></li>
+</ol>
+
+
+<h4> How interface is Different from a class</h4>
+<ol>
+<li> You can not create an object of Interface </li>
+<li> Interface doesn't contain Constructor </li>
+<li>All method in Interface are abstract </li>
+<li>An interface can not have instance variable</li>
+<li>An Interface can extend multiple interface </li>
+<li></li>
+</ol>
+
+<h3> Interface Vs Abstract class</h3>
+
+|Interface|Abstract Class|
+|---|----|
+|Can only have abstract method | Can have abstract and non abstract method|
+|support multiple inheritance | Doesn't support Multiple Inhetitance |
+|Interface have Static and final variable| Can have static non static ,final and non final variable|
+|Fully Abstract| Partial Abstract|
+
+
+
+<h1>Package </h1>
+<p>A package is a group of related classes interface and sub package </p>
+
+<strong>Two type of Package <strong>
+<ol>
+<li>Built in Package (Scanner) </li>
+<li>User define Package </li>
+</ol>
+
+<h3> Bulit IN Package </h3>
+
+<ol>
+<li> Java Package ---> Java Subpackage ---> Class</li>
+<li>import java.util.Scanner </li>
+<li>io----> Reader / Writer file </li>
+<li>lang----> Math /String / String Buffer Systrm</li>
+<li>net---> URL Socket </li>
+<li>util-----> Scanner Arrays /ArrayList/ Random </li>
+<li>awt ----> Button / Image / Label / Menu </li>
+<li>applet-----> </li>
+</ol>
+
+
+
+
+
+<h1>Access Modifier </h1>
+<b>Modifier</b>
+<p>Access modifiers in Java are the keywords that are used for controlling the use of the methods, constructors, fields, and methods in a class</p>
+
+<h4> Types of Modifier</h4>
+<ol>
+<li>Access Modifier</li>
+<li>Non Access Modifier </li>
+</ol>
+
+<h4> Access Modifer</h4>
+<ol>
+<li>Private</li>
+<li>public </li>
+<li>protected </li>
+<li>Default</li>
+</ol>
+
+<h4> Non Access Modifier</h4>
+<ol>
+<li>static</li>
+<li>abstract </li>
+<li>volatile </li>
+</ol>

@@ -1918,3 +1918,34 @@ public class Main {
 <li>Down casting( store super class object into the subclass object </li>
 <li>Java doesn't allow down casting </li>
 </ol>
+
+
+<h1>Anonymous Class</h1>
+<p>A class who has no name</p>
+
+````java
+package Anonymous_Class;
+
+public class Person {
+    void Display(){
+        System.out.println("Person Class");
+    }
+}
+
+````
+````java
+package Anonymous_Class;
+
+public class Main {
+    public static void main(String[] args) {
+        Person P1= new Person(){
+            @Override
+            void Display() {
+                System.out.println("Test Class");
+            }
+        };
+        P1.Display();
+    }
+}
+
+````

@@ -1839,3 +1839,27 @@ public class Main {
 |support multiple inheritance | Doesn't support Multiple Inhetitance |
 |Interface have Static and final variable| Can have static non static ,final and non final variable|
 |Fully Abstract| Partial Abstract|
+
+
+
+<h1>Package </h1>
+<p>A package is a group of related classes interface and sub package </p>
+
+<strong>Two type of Package <strong>
+<ol>
+<li>Built in Package (Scanner) </li>
+<li>User define Package </li>
+</ol>
+
+<h3> Bulit IN Package </h3>
+
+<ol>
+<li> Java Package ---> Java Subpackage ---> Class</li>
+<li>import java.util.Scanner </li>
+<li>io----> Reader / Writer file </li>
+<li>lang----> Math /String / String Buffer Systrm</li>
+<li>net---> URL Socket </li>
+<li>util-----> Scanner Arrays /ArrayList/ Random </li>
+<li>awt ----> Button / Image / Label / Menu </li>
+<li>applet-----> </li>
+</ol>

@@ -2046,3 +2046,21 @@ public class Exception_Array_related {
 }
 
 ````
+
+<h1>Decimal Number Formatting </h1>
+<p>Decimal Number formation...(Doshomik er por koi ghor bosbe ta fixed korte)</p>
+
+```java
+package Number_Format;
+
+import java.text.DecimalFormat;
+
+public class Decimal_Number_Format {
+    public static void main(String[] args) {
+        DecimalFormat ob= new DecimalFormat("0.00");
+        double X= 3.1416;
+        System.out.println("X= "+ob.format(X));
+    }
+}
+
+```

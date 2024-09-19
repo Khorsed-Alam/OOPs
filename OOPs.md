@@ -1998,3 +1998,5 @@ try{
     // Block of code to be execute after try block
         }
 ```
+
+<b>Java Pactice<b>

@@ -1897,11 +1897,24 @@ public class Main {
 
 <h1>Type Casting</h1>
 <p>Converting one data type to another is called type casting</p>
+<b>Type of Data</b>
+<ul>
+<li>primitive data</li>
+<li>Non primitive data</li>
+</ul>
 
-<h5>Classification of type casting</h5>
+<h5>Classification of type casting(primitive)</h5>
 <ol>
 <li>Implicit type casting</li>
 <p>byte ---> short ---> int ---> long ---> float ---> double</p>
 <li>Explicit type Casting </li>
 <p>double ---> float ---> long ---> int ---> short ---> byte</p>
+</ol>
+
+
+<h5>Classification of type casting(Non primitive)</h5>
+<ol>
+<li>UpCasting( store subclass class object into the super class object </li>
+<li>Down casting( store super class object into the subclass object </li>
+<li>Java doesn't allow down casting </li>
 </ol>

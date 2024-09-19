@@ -1911,3 +1911,10 @@ public class Main {
 <p>double ---> float ---> long ---> int ---> short ---> byte</p>
 </ol>
 
+
+<h5>Classification of type casting(Non primitive)</h5>
+<ol>
+<li>UpCasting( store subclass class object into the super class object </li>
+<li>Down casting( store super class object into the subclass object </li>
+<li>Java doesn't allow down casting </li>
+</ol>

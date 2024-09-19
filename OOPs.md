@@ -1811,3 +1811,31 @@ public class Main {
 }
 
 ```
+
+
+<h4> How interface is similar to a class</h4>
+<ol>
+<li>Interface can have any number of method</li>
+<li>It has same file extension as java class </li>
+<li></li>
+</ol>
+
+
+<h4> How interface is Different from a class</h4>
+<ol>
+<li> You can not create an object of Interface </li>
+<li> Interface doesn't contain Constructor </li>
+<li>All method in Interface are abstract </li>
+<li>An interface can not have instance variable</li>
+<li>An Interface can extend multiple interface </li>
+<li></li>
+</ol>
+
+<h3> Interface Vs Abstract class</h3>
+
+|Interface|Abstract Class|
+|---|----|
+|Can only have abstract method | Can have abstract and non abstract method|
+|support multiple inheritance | Doesn't support Multiple Inhetitance |
+|Interface have Static and final variable| Can have static non static ,final and non final variable|
+|Fully Abstract| Partial Abstract|

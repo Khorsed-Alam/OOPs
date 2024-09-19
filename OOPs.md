@@ -2000,3 +2000,49 @@ try{
 ```
 
 <b>Java Pactice<b>
+<p> Firstly use Lower Object(ArrayOutOfBoundsException) Then Use Higher Object (Exception)</p>
+
+```java
+package Exception_Handle;
+
+public class Exception_demo {
+    public static void main(String[] args) {
+        try{
+            int x=10;
+            int y=0;
+            int result = x/y;
+            System.out.println("Result : "+result);
+        }catch(ArrayIndexOutOfBoundsException e1) {
+            System.out.println("Exception: " + e1);
+        } catch (ArithmeticException e2){
+            System.out.println("Exception :" +e2);
+        }
+
+            finally {
+            System.out.println("Last Line of the program");
+        }
+    }
+}
+
+```
+
+````java
+package Exception_Handle;
+
+public class Exception_Array_related {
+    public static void main(String[] args) {
+        try {
+            int []a= new int[4];
+            a[4]=10;
+        }catch (ArithmeticException e1){
+            System.out.println("Exception : "+e1);
+        } catch (ArrayIndexOutOfBoundsException e2){
+            System.out.println("Exception : "+e2);
+        }
+        finally {
+            System.out.println("Last Line of the Program");
+        }
+    }
+}
+
+````

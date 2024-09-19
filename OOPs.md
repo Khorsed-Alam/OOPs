@@ -2100,3 +2100,55 @@ public class Main {
 }
 
 ```
+
+
+<h2>String Comparison </h2>
+<p>Process of String comparison</p>
+<ol>
+<li>equal() --->equal method---> for object </li>
+<li>Equal operator (==)  ----> for primitive data type </li>
+</ol>
+
+````java
+package String_Comparison;
+
+import com.sun.security.jgss.GSSUtil;
+
+public class Equal_Operator {
+    public static void main(String[] args) {
+        String Password1="1234";
+        String Password2="1234";
+        String Password3= new String("1234");
+        String Password4= new String("1234");
+
+        System.out.println(Password1 == Password2);
+        System.out.println(Password1 == Password3);
+        System.out.println(Password3 == Password4);
+
+
+    }
+}
+
+````
+
+```java
+package String_Comparison;
+
+import Anonymous_Class.Person;
+
+public class Equal_Method {
+    public static void main(String[] args) {
+        String Password1= "1234";
+        String Password2= "1234";
+        String Password3= new String("1234");
+        String Password4= new String("1234");
+
+        System.out.println(Password1.equals(Password2));
+        System.out.println(Password1.equals(Password3));
+        System.out.println(Password3.equals(Password4));
+
+
+    }
+}
+
+```

@@ -2064,3 +2064,47 @@ public class Decimal_Number_Format {
 }
 
 ```
+
+<h2> toStringMethod</h2>
+<p>Its a builtin Method</p>
+
+````java
+package toString_Method;
+
+public class Person {
+    String name;
+    int age;
+    Person(String name , int age){
+        this.name= name;
+        this.age=age;
+    }
+    public String toString(){
+        return "Name: "+name+ "\n Age: "+age;
+    }
+
+}
+
+````
+```java
+package toString_Method;
+
+public class Main {
+    public static void main(String[] args) {
+        Person P1= new Person("Khorsed",20);
+
+        Person P2= new Person("Khorsed Alam",21);
+        System.out.println(P1);
+        System.out.println(P2);
+
+    }
+}
+
+```
+
+
+<h2>String Comparison </h2>
+<p>Process of String comparison</p>
+<ol>
+<li>equal() --->equal method---> for object </li>
+<li>Equal operator (==)  ----> for primitive data type </li>
+</ol>

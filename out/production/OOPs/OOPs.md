@@ -1880,10 +1880,10 @@ public class Main {
 
 <h4> Access Modifer</h4>
 <ol>
-<li>Private</li>
-<li>public </li>
-<li>protected </li>
-<li>Default</li>
+<li>Private---> Access only same class</li>
+<li>public----> Access any Class or any Package </li>
+<li>protected----> access same package but condition --->class must be inherited or Child class </li>
+<li>Default---> default member will accessable into same package </li>
 </ol>
 
 <h4> Non Access Modifier</h4>
@@ -1891,4 +1891,17 @@ public class Main {
 <li>static</li>
 <li>abstract </li>
 <li>volatile </li>
+</ol>
+
+
+
+<h1>Type Casting</h1>
+<p>Converting one data type to another is called type casting</p>
+
+<h5>Classification of type casting</h5>
+<ol>
+<li>Implicit type casting</li>
+<p>byte ---> short ---> int ---> long ---> float ---> double</p>
+<li>Explicit type Casting </li>
+<p>double ---> float ---> long ---> int ---> short ---> byte</p>
 </ol>

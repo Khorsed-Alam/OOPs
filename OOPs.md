@@ -1892,3 +1892,22 @@ public class Main {
 <li>abstract </li>
 <li>volatile </li>
 </ol>
+
+
+
+<h1>Type Casting</h1>
+<p>Converting one data type to another is called type casting</p>
+<b>Type of Data</b>
+<ul>
+<li>primitive data</li>
+<li>Non primitive data</li>
+</ul>
+
+<h5>Classification of type casting(primitive)</h5>
+<ol>
+<li>Implicit type casting</li>
+<p>byte ---> short ---> int ---> long ---> float ---> double</p>
+<li>Explicit type Casting </li>
+<p>double ---> float ---> long ---> int ---> short ---> byte</p>
+</ol>
+

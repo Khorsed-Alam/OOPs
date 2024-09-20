@@ -2152,3 +2152,132 @@ public class Equal_Method {
 }
 
 ```
+
+<h1>File</h1>
+<ol>
+<li>How to create Folder / Directory/ File</li>
+<li>How to Write into a File</li>
+<li>How to read a file</li>
+</ol>
+
+<h5>Create File</h5>
+<b>Create Directory on specific Position</b>
+```java
+ File dir= new File("C:\\Users\\hp\\OneDrive\\Desktop\\Academic\\OOPs\\Person" );// Create Directory/Folder On specific location
+        dir.mkdir();// Directory will Be Created
+```
+<b>Find Path Of Directory use {.getAbsolutePath()}Method</b>
+```java
+String DirectoryLocatiionPath= dir.getAbsolutePath();// ToFind Path of Created Directory
+        System.out.println(DirectoryLocatiionPath);// Print Directory Path
+```
+<B>Print Directory Name use{.getName()}method</b>
+````java
+System.out.println(dir.getName());// Print Directory Name
+````
+
+<strong>Delete Directory use {.delete() } method </strong>
+````java
+ if (dir.delete()){// if you want to delete directory use .delete()Method
+            System.out.println(dir.getName() + " Folder has Been delete ");
+        }
+````
+
+<h4>Full Code</h4>
+```java
+package Create_File;
+
+import java.io.File;
+
+public class Directory_Create_Delete {
+    public static void main(String[] args) {
+        File dir= new File("C:\\Users\\hp\\OneDrive\\Desktop\\Academic\\OOPs\\Person" );// Create Directory/Folder On specific location
+        dir.mkdir();// Directory will Be Created
+        String DirectoryLocatiionPath= dir.getAbsolutePath();// ToFind Path of Created Directory
+        System.out.println(DirectoryLocatiionPath);// Print Directory Path
+        System.out.println(dir.getName());// Print Directory Name
+        if (dir.delete()){// if you want to delete directory use .delete()Method
+            System.out.println(dir.getName() + " Folder has Been delete ");
+        }
+
+        // Again Directory Created
+        File dir1= new File("C:\\Users\\hp\\OneDrive\\Desktop\\Academic\\OOPs\\Person" );// Create Directory/Folder On specific location
+        dir1.mkdir();// Directory will Be Created
+
+    }
+}
+
+
+```
+
+<H1>File Create Delete</H1>
+
+````java
+File dir= new File("Person");
+        dir.mkdir();
+String Path= dir.getAbsolutePath();
+File file1= new File("C:\\Users\\hp\\OneDrive\\Desktop\\Academic\\OOPs\\Person\\Student.txt");
+File file2= new File("C:\\Users\\hp\\OneDrive\\Desktop\\Academic\\OOPs\\Person\\Teacher.txt");
+
+
+        try {
+                file1.createNewFile();
+            file2.createNewFile();
+            System.out.println("File are Created");
+        }catch (Exception e){
+        System.out.println(e);
+        }
+````
+
+<h3>File delete use{.delete()}method</h3>
+```java
+       file2.delete();
+         if(file2.exists()){
+             System.out.println("Doesn't Exist");
+         }
+
+```
+
+<h3>Exists Check </h3>
+`````java
+if(file1.exists()){
+            System.out.println("File Exists");
+        }
+`````
+package Create_File;
+
+import java.io.File;
+
+public class File_Create_Delete {
+public static void main(String[] args) {
+File dir= new File("Person");
+dir.mkdir();
+String Path= dir.getAbsolutePath();
+File file1= new File("C:\\Users\\hp\\OneDrive\\Desktop\\Academic\\OOPs\\Person\\Student.txt");
+File file2= new File("C:\\Users\\hp\\OneDrive\\Desktop\\Academic\\OOPs\\Person\\Teacher.txt");
+
+
+        try {
+            file1.createNewFile();
+            file2.createNewFile();
+            System.out.println("File are Created");
+        }catch (Exception e){
+            System.out.println(e);
+        }
+
+        file2.delete();
+         if(file2.exists()){
+             System.out.println("Doesn't Exist");
+         }
+
+        if(file1.exists()){
+            System.out.println("File Exists");
+        }
+
+    }
+}
+
+
+````java
+
+````

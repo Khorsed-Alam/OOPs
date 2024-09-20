@@ -2108,3 +2108,105 @@ public class Main {
 <li>equal() --->equal method---> for object </li>
 <li>Equal operator (==)  ----> for primitive data type </li>
 </ol>
+
+````java
+package String_Comparison;
+
+import com.sun.security.jgss.GSSUtil;
+
+public class Equal_Operator {
+    public static void main(String[] args) {
+        String Password1="1234";
+        String Password2="1234";
+        String Password3= new String("1234");
+        String Password4= new String("1234");
+
+        System.out.println(Password1 == Password2);
+        System.out.println(Password1 == Password3);
+        System.out.println(Password3 == Password4);
+
+
+    }
+}
+
+````
+
+```java
+package String_Comparison;
+
+import Anonymous_Class.Person;
+
+public class Equal_Method {
+    public static void main(String[] args) {
+        String Password1= "1234";
+        String Password2= "1234";
+        String Password3= new String("1234");
+        String Password4= new String("1234");
+
+        System.out.println(Password1.equals(Password2));
+        System.out.println(Password1.equals(Password3));
+        System.out.println(Password3.equals(Password4));
+
+
+    }
+}
+
+```
+
+<h1>File</h1>
+<ol>
+<li>How to create Folder / Directory/ File</li>
+<li>How to Write into a File</li>
+<li>How to read a file</li>
+</ol>
+
+<h5>Create File</h5>
+<b>Create Directory on specific Position</b>
+```java
+ File dir= new File("C:\\Users\\hp\\OneDrive\\Desktop\\Academic\\OOPs\\Person" );// Create Directory/Folder On specific location
+        dir.mkdir();// Directory will Be Created
+```
+<b>Find Path Of Directory use {.getAbsolutePath()}Method</b>
+```java
+String DirectoryLocatiionPath= dir.getAbsolutePath();// ToFind Path of Created Directory
+        System.out.println(DirectoryLocatiionPath);// Print Directory Path
+```
+<B>Print Directory Name use{.getName()}method</b>
+````java
+System.out.println(dir.getName());// Print Directory Name
+````
+
+<strong>Delete Directory use {.delete() } method </strong>
+````java
+ if (dir.delete()){// if you want to delete directory use .delete()Method
+            System.out.println(dir.getName() + " Folder has Been delete ");
+        }
+````
+
+<h4>Full Code</h4>
+```java
+package Create_File;
+
+import java.io.File;
+
+public class Directory_Create_Delete {
+    public static void main(String[] args) {
+        File dir= new File("C:\\Users\\hp\\OneDrive\\Desktop\\Academic\\OOPs\\Person" );// Create Directory/Folder On specific location
+        dir.mkdir();// Directory will Be Created
+        String DirectoryLocatiionPath= dir.getAbsolutePath();// ToFind Path of Created Directory
+        System.out.println(DirectoryLocatiionPath);// Print Directory Path
+        System.out.println(dir.getName());// Print Directory Name
+        if (dir.delete()){// if you want to delete directory use .delete()Method
+            System.out.println(dir.getName() + " Folder has Been delete ");
+        }
+
+        // Again Directory Created
+        File dir1= new File("C:\\Users\\hp\\OneDrive\\Desktop\\Academic\\OOPs\\Person" );// Create Directory/Folder On specific location
+        dir1.mkdir();// Directory will Be Created
+
+    }
+}
+
+
+```
+

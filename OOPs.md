@@ -2161,22 +2161,22 @@ public class Equal_Method {
 </ol>
 
 <h5>Create File</h5>
-<b>Create Directory on specific Position</b>
+<h4>Create Directory on specific Position</h4>
 ```java
  File dir= new File("C:\\Users\\hp\\OneDrive\\Desktop\\Academic\\OOPs\\Person" );// Create Directory/Folder On specific location
         dir.mkdir();// Directory will Be Created
 ```
-<b>Find Path Of Directory use {.getAbsolutePath()}Method</b>
+<h4>Find Path Of Directory use {.getAbsolutePath()}Method</h4>
 ```java
 String DirectoryLocatiionPath= dir.getAbsolutePath();// ToFind Path of Created Directory
         System.out.println(DirectoryLocatiionPath);// Print Directory Path
 ```
-<B>Print Directory Name use{.getName()}method</b>
+<h4>Print Directory Name use{.getName()}method</h4>
 ````java
 System.out.println(dir.getName());// Print Directory Name
 ````
 
-<strong>Delete Directory use {.delete() } method </strong>
+<h4>Delete Directory use {.delete() } method </h4>
 ````java
  if (dir.delete()){// if you want to delete directory use .delete()Method
             System.out.println(dir.getName() + " Folder has Been delete ");
@@ -2192,11 +2192,16 @@ import java.io.File;
 public class Directory_Create_Delete {
     public static void main(String[] args) {
         File dir= new File("C:\\Users\\hp\\OneDrive\\Desktop\\Academic\\OOPs\\Person" );// Create Directory/Folder On specific location
-        dir.mkdir();// Directory will Be Created
-        String DirectoryLocatiionPath= dir.getAbsolutePath();// ToFind Path of Created Directory
-        System.out.println(DirectoryLocatiionPath);// Print Directory Path
-        System.out.println(dir.getName());// Print Directory Name
-        if (dir.delete()){// if you want to delete directory use .delete()Method
+        dir.mkdir();
+        // Directory will Be Created
+        String DirectoryLocatiionPath= dir.getAbsolutePath();
+        // ToFind Path of Created Directory
+        System.out.println(DirectoryLocatiionPath);
+        // Print Directory Path
+        System.out.println(dir.getName());
+        // Print Directory Name
+        if (dir.delete()){
+            / if you want to delete directory use .delete()Method
             System.out.println(dir.getName() + " Folder has Been delete ");
         }
 

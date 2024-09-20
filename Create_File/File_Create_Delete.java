@@ -19,10 +19,7 @@ public class File_Create_Delete {
             System.out.println(e);
         }
 
-        file2.delete();
-         if(file2.exists()){
-             System.out.println("Doesn't Exist");
-         }
+
 
         if(file1.exists()){
             System.out.println("File Exists");

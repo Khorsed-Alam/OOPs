@@ -2210,3 +2210,74 @@ public class Directory_Create_Delete {
 
 ```
 
+<H1>File Create Delete</H1>
+
+````java
+File dir= new File("Person");
+        dir.mkdir();
+String Path= dir.getAbsolutePath();
+File file1= new File("C:\\Users\\hp\\OneDrive\\Desktop\\Academic\\OOPs\\Person\\Student.txt");
+File file2= new File("C:\\Users\\hp\\OneDrive\\Desktop\\Academic\\OOPs\\Person\\Teacher.txt");
+
+
+        try {
+                file1.createNewFile();
+            file2.createNewFile();
+            System.out.println("File are Created");
+        }catch (Exception e){
+        System.out.println(e);
+        }
+````
+
+<h3>File delete use{.delete()}method</h3>
+```java
+       file2.delete();
+         if(file2.exists()){
+             System.out.println("Doesn't Exist");
+         }
+
+```
+
+<h3>Exists Check </h3>
+`````java
+if(file1.exists()){
+            System.out.println("File Exists");
+        }
+`````
+
+
+````java
+package Create_File;
+
+import java.io.File;
+
+public class File_Create_Delete {
+public static void main(String[] args) {
+File dir= new File("Person");
+dir.mkdir();
+String Path= dir.getAbsolutePath();
+File file1= new File("C:\\Users\\hp\\OneDrive\\Desktop\\Academic\\OOPs\\Person\\Student.txt");
+File file2= new File("C:\\Users\\hp\\OneDrive\\Desktop\\Academic\\OOPs\\Person\\Teacher.txt");
+
+
+        try {
+            file1.createNewFile();
+            file2.createNewFile();
+            System.out.println("File are Created");
+        }catch (Exception e){
+            System.out.println(e);
+        }
+
+        file2.delete();
+         if(file2.exists()){
+             System.out.println("Doesn't Exist");
+         }
+
+        if(file1.exists()){
+            System.out.println("File Exists");
+        }
+
+    }
+}
+
+````

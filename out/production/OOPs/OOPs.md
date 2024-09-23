@@ -2161,22 +2161,22 @@ public class Equal_Method {
 </ol>
 
 <h5>Create File</h5>
-<b>Create Directory on specific Position</b>
+<h4>Create Directory on specific Position</h4>
 ```java
  File dir= new File("C:\\Users\\hp\\OneDrive\\Desktop\\Academic\\OOPs\\Person" );// Create Directory/Folder On specific location
         dir.mkdir();// Directory will Be Created
 ```
-<b>Find Path Of Directory use {.getAbsolutePath()}Method</b>
+<h4>Find Path Of Directory use {.getAbsolutePath()}Method</h4>
 ```java
 String DirectoryLocatiionPath= dir.getAbsolutePath();// ToFind Path of Created Directory
         System.out.println(DirectoryLocatiionPath);// Print Directory Path
 ```
-<B>Print Directory Name use{.getName()}method</b>
+<h4>Print Directory Name use{.getName()}method</h4>
 ````java
 System.out.println(dir.getName());// Print Directory Name
 ````
 
-<strong>Delete Directory use {.delete() } method </strong>
+<h4>Delete Directory use {.delete() } method </h4>
 ````java
  if (dir.delete()){// if you want to delete directory use .delete()Method
             System.out.println(dir.getName() + " Folder has Been delete ");
@@ -2192,17 +2192,23 @@ import java.io.File;
 public class Directory_Create_Delete {
     public static void main(String[] args) {
         File dir= new File("C:\\Users\\hp\\OneDrive\\Desktop\\Academic\\OOPs\\Person" );// Create Directory/Folder On specific location
-        dir.mkdir();// Directory will Be Created
-        String DirectoryLocatiionPath= dir.getAbsolutePath();// ToFind Path of Created Directory
-        System.out.println(DirectoryLocatiionPath);// Print Directory Path
-        System.out.println(dir.getName());// Print Directory Name
-        if (dir.delete()){// if you want to delete directory use .delete()Method
+        dir.mkdir();
+        // Directory will Be Created
+        String DirectoryLocatiionPath= dir.getAbsolutePath();
+        // ToFind Path of Created Directory
+        System.out.println(DirectoryLocatiionPath);
+        // Print Directory Path
+        System.out.println(dir.getName());
+        // Print Directory Name
+        if (dir.delete()){
+            / if you want to delete directory use .delete()Method
             System.out.println(dir.getName() + " Folder has Been delete ");
         }
 
         // Again Directory Created
         File dir1= new File("C:\\Users\\hp\\OneDrive\\Desktop\\Academic\\OOPs\\Person" );// Create Directory/Folder On specific location
         dir1.mkdir();// Directory will Be Created
+        
 
     }
 }
@@ -2306,3 +2312,55 @@ public class FileDemo {
 }
 
 ```
+
+```text
+0112330472 Khorsed Alam 
+0112330474 Khorsed  
+0112330475 Alam 
+
+```
+
+<h3>Write Into file by user</h3>
+````java
+package Write_Into_File_By_User;
+
+import java.util.Formatter;
+import java.util.Scanner;
+
+public class FileDemo {
+    public static void main(String[] args) {
+        String id;
+        String name;
+
+        try{
+            Formatter formatter = new Formatter("C:\\Users\\hp\\OneDrive\\Desktop\\Academic\\OOPs\\Write_Into_File_By_User\\ Student");
+            Scanner Input= new Scanner(System.in);
+            System.out.print("How many Student:");
+            int num= Input.nextInt();
+
+            for (int i = 1; i <= num; i++) {
+                System.out.print("Enter Student id and name: ");
+                id= Input.next();
+                name= Input.next();
+
+                formatter.format("%s %s \r \n ",id , name);
+
+            }
+            formatter.close();
+        }catch (Exception E){
+            System.out.println(E);
+        }
+    }
+}
+
+````
+
+````text
+01123 Khorsed 
+ 
+ 10024 Alam 
+ 
+ 02235 Khorsed 
+ 
+ 
+````
